@@ -3,10 +3,11 @@ import pandas as pd
 import streamlit as st
 from numpy import power, where
 from numpy.random import randint, seed
-from sklearn.model_selection import train_test_split
-from sklearn.tree import DecisionTreeRegressor
 from seaborn import scatterplot
 from matplotlib import pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeRegressor
+
 plt.style.use('seaborn')
 
 arr = []
