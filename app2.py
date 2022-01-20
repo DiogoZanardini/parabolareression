@@ -15,7 +15,8 @@ seed(369)
 for i in range(601):
     x = i/100
     y1 = (-power( ((2/3) * x - 2), 2) + 4)
-    y2 = y1 + randint(-12, 12)*0.10
+    #y2 = y1 + randint(-12, 12)*0.10
+    y2 = randint(-10, 45)*0.10
     arr.append([x,round(y1, 4),round(y2, 4) ])
 
 
