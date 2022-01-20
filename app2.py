@@ -1,7 +1,7 @@
 #Bibliotecas
 import pandas as pd
 import streamlit as st
-import seaborn as sns
+
 from numpy import power, where
 from numpy.random import randint, seed
 #from sklearn.model_selection import train_test_split
@@ -42,10 +42,10 @@ reg = -power((2/3 * ax_x - 2), 2) + 4
 #    st.subheader('A coordenada está FORA da \"zona verde\"')
 
 fig = plt.figure(figsize=(12, 6))
-sctr = sns.scatterplot(data=df, x='x',y='y2',size=1, hue='y3')
-sctr = sns.scatterplot(x=[ax_x],y=[ax_y], s=400, marker='+', color='black')
-sctr.set_xlabel('Eixo X', fontsize = 20)
-sctr.set_ylabel('Eixo Y', fontsize = 20)
-sctr.set_title('Distribuição classificada dos dados', fontsize = 20)
+#sctr = sns.scatterplot(data=df, x='x',y='y2',size=1, hue='y3')
+#sctr = sns.scatterplot(x=[ax_x],y=[ax_y], s=400, marker='+', color='black')
+#sctr.set_xlabel('Eixo X', fontsize = 20)
+#sctr.set_ylabel('Eixo Y', fontsize = 20)
+#sctr.set_title('Distribuição classificada dos dados', fontsize = 20)
 
-st.pyplot(fig)
+#st.pyplot(fig)
