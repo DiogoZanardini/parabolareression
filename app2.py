@@ -1,5 +1,4 @@
 #Bibliotecas
-from tkinter.ttk import Style
 import pandas as pd
 import streamlit as st
 from numpy import power, where
@@ -42,17 +41,10 @@ elif pred == 0.0:
     st.subheader('A coordenada está FORA da \"zona verde\"')
 
 fig = plt.figure(figsize=(12, 6))
-#plt.title('xy') #title
-#plt.xlabel('x') #x label
-#plt.ylabel('y') #y label
-
-
 sctr = scatterplot(data=df, x='x',y='y2',size=1, hue='y3')
 sctr = scatterplot(x=[ax_x],y=[ax_y], s=400, marker='+', color='black')
 sctr.set_xlabel('Eixo X', fontsize = 20)
 sctr.set_ylabel('Eixo Y', fontsize = 20)
 sctr.set_title('Distribuição classificada dos dados', fontsize = 20)
-
-
 
 st.pyplot(fig)
