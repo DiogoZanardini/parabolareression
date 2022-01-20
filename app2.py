@@ -7,8 +7,8 @@ from numpy.random import randint, seed
 #from sklearn.model_selection import train_test_split
 #from sklearn.tree import DecisionTreeRegressor
 #from seaborn import scatterplot
-from matplotlib import pyplot as plt
-plt.style.use('seaborn')
+#from matplotlib import pyplot as plt
+#plt.style.use('seaborn')
 
 arr = []
 seed(369)
@@ -41,7 +41,7 @@ reg = -power((2/3 * ax_x - 2), 2) + 4
 #elif pred == 0.0:
 #    st.subheader('A coordenada está FORA da \"zona verde\"')
 
-fig = plt.figure(figsize=(12, 6))
+#fig = plt.figure(figsize=(12, 6))
 #sctr = sns.scatterplot(data=df, x='x',y='y2',size=1, hue='y3')
 #sctr = sns.scatterplot(x=[ax_x],y=[ax_y], s=400, marker='+', color='black')
 #sctr.set_xlabel('Eixo X', fontsize = 20)
